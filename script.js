@@ -536,7 +536,7 @@ document.addEventListener('DOMContentLoaded', () => {
         searchByAPI(apiQuery);
     } else {
         // Load data normally if no API query is present
-        loadAcronymData();
+        loadcontrolsData();
     }
 });
 
