@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.control {
+    margin-bottom: 20px;
+}
+
+.control-title {
+    font-weight: bold;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
