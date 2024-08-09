@@ -534,25 +534,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (apiQuery) {
         searchByAPI(apiQuery);
-    } else {
-        // Load data normally if no API query is present
-        loadcontrolsData();
     }
 });
 
-async function searchByAPI(query) {
-    try {
-        const response = await fetch('data.json');
-        const data = await response.json();
-        const result = data.find(item => item.subcategory.toLowerCase() === query.toLowerCase());
+function searchByAPI(query) {
+    const result = controlData.find(item => item.subcategory.toLowerCase() === query.toLowerCase());
 
-        if (result) {
-            displayAPIResult(result);
-        } else {
-            document.body.textContent = `No results found for query: ${query}`;
-        }
-    } catch (error) {
-        console.error('Error loading data:', error);
+    if (result) {
+        displayAPIResult(result);
+    } else {
+        document.body.textContent = `No results found for query: ${query}`;
     }
 }
 
