@@ -1,0 +1,13 @@
+[
+    {
+        "subcategory": "DE.CM-01",
+        "metaphor": "Watching security cameras to spot any intruders.",
+        "translation": "The family keeps an eye on security cameras to catch any suspicious activity around the house."
+    },
+    {
+        "subcategory": "DE.CM-02",
+        "metaphor": "Checking for unusual sounds or smells in the house.",
+        "translation": "The family pays attention to any unusual sounds or smells in the house that could indicate a problem, like a gas leak or an intruder."
+    }
+    // Add the rest of your data here
+]
