@@ -8,6 +8,155 @@
         "subcategory": "DE.CM-02",
         "metaphor": "Checking for unusual sounds or smells in the house.",
         "translation": "The family pays attention to any unusual sounds or smells in the house that could indicate a problem, like a gas leak or an intruder."
+    },
+    {
+        "subcategory": "DE.CM-03",
+        "metaphor": "Keeping track of who is using the computer and what they are doing.",
+        "translation": "The family monitors computer usage to make sure no one is doing anything risky, like visiting dangerous websites."
+    },
+    {
+        "subcategory": "DE.CM-06",
+        "metaphor": "Keeping an eye on the work done by contractors or service providers in your home.",
+        "translation": "The family monitors the work done by external service providers, like plumbers or electricians, to ensure everything is done safely and correctly."
+    },
+    {
+        "subcategory": "DE.CM-09",
+        "metaphor": "Regularly checking your home computer for viruses or malware.",
+        "translation": "The family monitors their computers and devices to make sure they are not infected with viruses or malware."
+    },
+    {
+        "subcategory": "DE.AE-02",
+        "metaphor": "Investigating a strange noise in the middle of the night to figure out what caused it.",
+        "translation": "The family investigates any strange occurrences in the house, like noises at night, to understand what happened and whether it’s a threat."
+    },
+    {
+        "subcategory": "DE.AE-03",
+        "metaphor": "Gathering information from different family members to get a complete picture of what happened.",
+        "translation": "The family collects input from everyone to piece together what’s going on, like if multiple people heard the same strange noise."
+    },
+    {
+        "subcategory": "DE.AE-04",
+        "metaphor": "Assessing how much damage a storm has caused to your home.",
+        "translation": "The family evaluates the extent of damage after a storm to understand how bad the situation is and what needs to be fixed."
+    },
+    {
+        "subcategory": "DE.AE-06",
+        "metaphor": "Sharing details about a home repair issue with the contractor.",
+        "translation": "The family communicates important details about a problem, like a leak, to the person who will fix it."
+    },
+    {
+        "subcategory": "DE.AE-07",
+        "metaphor": "Using local news reports to understand why there have been more break-ins recently.",
+        "translation": "The family uses information from the news or other sources to understand broader issues that might affect their safety."
+    },
+    {
+        "subcategory": "DE.AE-08",
+        "metaphor": "Deciding to call the police when you hear a window break.",
+        "translation": "The family declares an emergency, like calling the police, when a situation meets their criteria for a serious threat."
+    },
+    {
+        "subcategory": "RS.MA-01",
+        "metaphor": "Calling the fire department when the smoke alarm goes off.",
+        "translation": "The family follows their emergency plan and contacts the necessary professionals, like the fire department, when a problem arises."
+    },
+    {
+        "subcategory": "RS.MA-02",
+        "metaphor": "Determining whether a reported problem, like a suspected gas leak, is real or a false alarm.",
+        "translation": "The family checks whether a reported issue is actually a problem, like smelling for gas to confirm a leak."
+    },
+    {
+        "subcategory": "RS.MA-03",
+        "metaphor": "Deciding whether a problem, like a broken window or a clogged drain, needs immediate attention or can wait.",
+        "translation": "The family ranks issues by importance, like fixing a broken window immediately while a clogged drain might wait until morning."
+    },
+    {
+        "subcategory": "RS.MA-04",
+        "metaphor": "Calling in a professional if a DIY repair turns out to be too difficult.",
+        "translation": "The family decides when to bring in professional help, like calling a plumber if a home repair is beyond their skills."
+    },
+    {
+        "subcategory": "RS.MA-05",
+        "metaphor": "Starting the cleanup after a storm once it’s safe.",
+        "translation": "The family begins repairs or recovery, like cleaning up after a storm, once they determine it’s safe to do so."
+    },
+    {
+        "subcategory": "RS.AN-03",
+        "metaphor": "Figuring out why the power went out by checking the breaker and talking to neighbors.",
+        "translation": "The family investigates to understand what caused a problem, like why the power went out, so they can fix it."
+    },
+    {
+        "subcategory": "RS.AN-06",
+        "metaphor": "Keeping notes of what you checked and did when trying to fix a home issue.",
+        "translation": "The family keeps a record of what steps they took when investigating a problem, like writing down what they checked when the power went out."
+    },
+    {
+        "subcategory": "RS.AN-07",
+        "metaphor": "Documenting the damage after a storm to report to insurance.",
+        "translation": "The family collects and keeps accurate records of what happened during an incident, like taking photos of storm damage for insurance."
+    },
+    {
+        "subcategory": "RS.AN-08",
+        "metaphor": "Assessing how much damage a burst pipe has caused.",
+        "translation": "The family evaluates how serious a problem is, like determining the extent of water damage from a burst pipe."
+    },
+    {
+        "subcategory": "RS.CO-02",
+        "metaphor": "Calling the neighbors to warn them about a fire in your house.",
+        "translation": "The family alerts anyone who needs to know about an emergency, like calling the neighbors during a fire."
+    },
+    {
+        "subcategory": "RS.CO-03",
+        "metaphor": "Sharing information about a security issue with your home insurance company.",
+        "translation": "The family provides necessary information to those who need it, like telling the insurance company about a break-in."
+    },
+    {
+        "subcategory": "RS.MI-01",
+        "metaphor": "Closing a door to keep smoke from spreading during a fire.",
+        "translation": "The family takes steps to stop a problem from getting worse, like closing a door to contain smoke during a fire."
+    },
+    {
+        "subcategory": "RS.MI-02",
+        "metaphor": "Putting out a fire in the kitchen.",
+        "translation": "The family completely resolves the problem, like putting out a fire to ensure it doesn’t spread."
+    },
+    {
+        "subcategory": "RC.RP-01",
+        "metaphor": "Starting repairs after the fire is out.",
+        "translation": "The family begins fixing the damage, like starting home repairs after a fire has been extinguished."
+    },
+    {
+        "subcategory": "RC.RP-02",
+        "metaphor": "Deciding which repairs to do first after a storm.",
+        "translation": "The family prioritizes and begins the necessary repairs, like deciding to fix the roof before repainting after a storm."
+    },
+    {
+        "subcategory": "RC.RP-03",
+        "metaphor": "Checking that your emergency supplies are still good before using them.",
+        "translation": "The family checks that backup supplies or resources are still usable before relying on them, like making sure stored water is safe to drink."
+    },
+    {
+        "subcategory": "RC.RP-04",
+        "metaphor": "Adjusting your home safety plan after an emergency to prevent future problems.",
+        "translation": "The family updates their safety routines after an emergency to ensure they are better prepared for the future."
+    },
+    {
+        "subcategory": "RC.RP-05",
+        "metaphor": "Making sure everything works properly after repairs are completed.",
+        "translation": "The family checks that all repairs were done correctly and that the home is safe and functional again."
+    },
+    {
+        "subcategory": "RC.RP-06",
+        "metaphor": "Declaring the home safe to live in again after renovations.",
+        "translation": "The family officially considers the home restored after ensuring everything is back to normal and documenting the process."
+    },
+    {
+        "subcategory": "RC.CO-03",
+        "metaphor": "Updating family members and contractors on the progress of home repairs.",
+        "translation": "The family keeps everyone informed about the status of repairs, like updating each other and any contractors involved."
+    },
+    {
+        "subcategory": "RC.CO-04",
+        "metaphor": "Posting a sign outside your house to inform neighbors that repairs are ongoing.",
+        "translation": "The family shares updates with the public, like letting the neighbors know that the house is under repair, using clear and approved communication methods."
     }
-    // Add the rest of your data here
 ]
