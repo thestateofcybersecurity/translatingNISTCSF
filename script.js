@@ -1,6 +1,6 @@
 let controlsData = {};
 
-// Load controls data from  file
+// Load controls data from data.json
 async function loadControlsData() {
     try {
         console.log('Fetching controls data...');
@@ -93,7 +93,7 @@ document.getElementById('searchButton').addEventListener('click', getMetaphorTra
 // Display Soup of the Day
 function displaySoupOfTheDay() {
     const today = new Date().toISOString().slice(0, 10);
-    let soupOfTheDay = .parse(localStorage.getItem('soupOfTheDay'));
+    let soupOfTheDay = JSON.parse(localStorage.getItem('soupOfTheDay'));
 
     if (!soupOfTheDay || soupOfTheDay.date !== today) {
         const controls = controlsData;
@@ -104,7 +104,7 @@ function displaySoupOfTheDay() {
             metaphor: randomControl.metaphor,
             translation: randomControl.translation
         };
-        localStorage.setItem('soupOfTheDay', .stringify(soupOfTheDay));
+        localStorage.setItem('soupOfTheDay', JSON.stringify(soupOfTheDay));
     }
 
     const soupAcronym = document.getElementById('soupAcronym');
