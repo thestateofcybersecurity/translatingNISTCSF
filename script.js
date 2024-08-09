@@ -1,6 +1,171 @@
 // Embed the JSON data directly into the script
 const controlsData = [
     {
+        "subcategory": "GV.OC-01",
+        "metaphor": "Understanding the purpose of your family and using it to guide decisions.",
+        "translation": "The family knows what’s important to them and uses that to decide how they should handle risks and challenges."
+    },
+    {
+        "subcategory": "GV.OC-02",
+        "metaphor": "Considering the needs of everyone in the household when making safety plans.",
+        "translation": "The family understands what each member needs to feel safe and considers these needs when making decisions."
+    },
+    {
+        "subcategory": "GV.OC-03",
+        "metaphor": "Keeping track of legal requirements, like having a smoke detector in the house.",
+        "translation": "The family ensures they are following all the necessary rules and regulations to stay safe and compliant."
+    },
+    {
+        "subcategory": "GV.OC-04",
+        "metaphor": "Making sure that the house’s main functions, like electricity and water, are reliable and well-maintained.",
+        "translation": "The family ensures that critical systems and services are dependable and meet the expectations of everyone living in the house."
+    },
+    {
+        "subcategory": "GV.OC-05",
+        "metaphor": "Understanding which household services and functions are essential for everyday living.",
+        "translation": "The family knows what services and systems they rely on most and ensures they are properly maintained and functioning."
+    },
+    {
+        "subcategory": "GV.RM-01",
+        "metaphor": "Setting household budgets based on family priorities.",
+        "translation": "The family decides what’s most important to spend money on, ensuring that the budget aligns with these goals."
+    },
+    {
+        "subcategory": "GV.RM-02",
+        "metaphor": "Agreeing on household rules for safety.",
+        "translation": "The family agrees on how much risk they are willing to take, like when children can play outside alone, and everyone follows these rules."
+    },
+    {
+        "subcategory": "GV.RM-03",
+        "metaphor": "Planning home renovations to match long-term family plans.",
+        "translation": "Any updates to the house, like adding an extra room, align with the family’s future plans, such as growing the family or hosting more visitors."
+    },
+    {
+        "subcategory": "GV.RM-04",
+        "metaphor": "Setting boundaries for safe areas in the home.",
+        "translation": "The family defines and communicates where it’s safe to play or work, like keeping certain tools in the garage and not in the living room."
+    },
+    {
+        "subcategory": "GV.RM-05",
+        "metaphor": "Setting up a family chat group for emergencies.",
+        "translation": "The family knows how to quickly and effectively communicate with each other if something goes wrong, like using a group chat to stay in touch during a storm."
+    },
+    {
+        "subcategory": "GV.RM-06",
+        "metaphor": "Using a checklist for home safety inspections.",
+        "translation": "The family regularly checks off items on a list to ensure the home remains safe, using the same list every time to make sure nothing is missed."
+    },
+    {
+        "subcategory": "GV.RM-07",
+        "metaphor": "Deciding whether to invest in home improvements.",
+        "translation": "The family weighs the benefits of making improvements to the house, like adding solar panels, to decide if the potential benefits are worth the cost."
+    },
+    {
+        "subcategory": "GV.RR-01",
+        "metaphor": "Parents ensuring safety rules are followed at home.",
+        "translation": "The parents ensure that everyone in the house follows the safety rules, integrating these into everyday routines."
+    },
+    {
+        "subcategory": "GV.RR-02",
+        "metaphor": "Assigning chores and responsibilities at home.",
+        "translation": "Everyone in the family knows what chores they are responsible for, and who to go to if they need help."
+    },
+    {
+        "subcategory": "GV.RR-03",
+        "metaphor": "Setting aside money to buy safety tools like smoke detectors.",
+        "translation": "The family allocates resources to make sure they can afford important safety tools and services."
+    },
+    {
+        "subcategory": "GV.RR-04",
+        "metaphor": "Including safety guidelines in the household rules.",
+        "translation": "The family integrates safety practices into their everyday activities, ensuring everyone knows what to do to stay safe."
+    },
+    {
+        "subcategory": "GV.PO-01",
+        "metaphor": "Setting house rules for safety.",
+        "translation": "The family establishes and communicates safety rules, like locking doors at night, that everyone agrees to follow."
+    },
+    {
+        "subcategory": "GV.PO-02",
+        "metaphor": "Updating house rules as the family grows.",
+        "translation": "The family reviews and updates the house safety rules as new situations arise, like when a baby starts crawling, to keep everyone safe."
+    },
+    {
+        "subcategory": "GV.OV-01",
+        "metaphor": "Reviewing the effectiveness of your home security system.",
+        "translation": "The family regularly checks if the security measures they put in place are working and makes adjustments if necessary."
+    },
+    {
+        "subcategory": "GV.OV-02",
+        "metaphor": "Adjusting your home security plan based on new threats.",
+        "translation": "The family updates their security plan, like installing new locks after a neighbor’s break-in, to address any new risks."
+    },
+    {
+        "subcategory": "GV.OV-03",
+        "metaphor": "Checking if your home safety rules are being followed.",
+        "translation": "The family periodically reviews how well everyone is following the safety rules and makes changes if they see issues."
+    },
+    {
+        "subcategory": "GV.SC-01",
+        "metaphor": "Setting up a list of trusted service providers for home repairs.",
+        "translation": "The family agrees on which service providers to trust for repairs and maintenance to ensure the home is well taken care of."
+    },
+    {
+        "subcategory": "GV.SC-02",
+        "metaphor": "Assigning chores and responsibilities for home upkeep.",
+        "translation": "The family clearly defines who is responsible for different tasks, like mowing the lawn or cleaning the gutters, and communicates this to everyone involved."
+    },
+    {
+        "subcategory": "GV.SC-03",
+        "metaphor": "Including service provider reviews in your regular home maintenance checks.",
+        "translation": "The family makes sure that checking on the reliability of service providers is part of their regular home maintenance routine."
+    },
+    {
+        "subcategory": "GV.SC-04",
+        "metaphor": "Having a list of emergency contacts for home repairs.",
+        "translation": "The family knows which service providers to call first in an emergency, like a plumber for a burst pipe."
+    },
+    {
+        "subcategory": "GV.SC-05",
+        "metaphor": "Setting expectations with a contractor before starting home renovations.",
+        "translation": "The family agrees on what they expect from a contractor before work begins, like making sure they follow safety protocols."
+    },
+    {
+        "subcategory": "GV.SC-06",
+        "metaphor": "Researching a contractor before hiring them.",
+        "translation": "The family checks references and reviews before hiring someone to work on the house, ensuring they’re trustworthy."
+    },
+    {
+        "subcategory": "GV.SC-07",
+        "metaphor": "Keeping track of how well a contractor performs during a home renovation.",
+        "translation": "The family monitors the contractor’s work and addresses any issues that come up, making sure everything is done to their standards."
+    },
+    {
+        "subcategory": "GV.SC-08",
+        "metaphor": "Having a repair crew on standby during a big home project.",
+        "translation": "The family coordinates with service providers so they’re ready to help quickly if something goes wrong during a major renovation."
+    },
+    {
+        "subcategory": "GV.SC-09",
+        "metaphor": "Regularly checking on the quality of materials used in home repairs.",
+        "translation": "The family ensures that the materials and products used in the house meet their standards and perform well over time."
+    },
+    {
+        "subcategory": "GV.SC-10",
+        "metaphor": "Reviewing a contractor’s work even after the job is done.",
+        "translation": "The family makes sure that everything is still in good condition and that there are no issues, even after the contractor has finished their work."
+    },
+    {
+        "subcategory": "ID.AM-01",
+        "metaphor": "Keeping a list of all your household appliances.",
+        "translation": "The family keeps an up-to-date list of all the appliances they own, like the refrigerator, washing machine, and microwave, so they know what they have and can maintain them properly."
+    },
+    {
+        "subcategory": "ID.AM-02",
+        "metaphor": "Tracking all the apps and subscriptions your family uses.",
+        "translation": "The family maintains a list of all the apps and services they use, like streaming services and home security systems, to keep track of their subscriptions and ensure everything is functioning as expected."
+    },
+    {
         "subcategory": "ID.AM-03",
         "metaphor": "Drawing a map of your home’s plumbing and electrical systems.",
         "translation": "The family has a map that shows where all the pipes and wires run in their home, so they know how everything is connected and can troubleshoot problems if they arise."
