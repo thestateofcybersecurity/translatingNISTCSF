@@ -1,4 +1,4 @@
-const controlsDataUrl = 'script.json';
+const controlsDataUrl = 'data.json';
 
 let controlsData = [];
 
