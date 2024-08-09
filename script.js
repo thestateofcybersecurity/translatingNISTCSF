@@ -527,6 +527,53 @@ const controlsData = [
     }
 ];
 
+//API
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const apiQuery = urlParams.get('query');
+
+    if (apiQuery) {
+        searchByAPI(apiQuery);
+    } else {
+        // Load data normally if no API query is present
+        loadAcronymData();
+    }
+});
+
+async function searchByAPI(query) {
+    try {
+        const response = await fetch('data.json');
+        const data = await response.json();
+        const result = data.find(item => item.subcategory.toLowerCase() === query.toLowerCase());
+
+        if (result) {
+            displayAPIResult(result);
+        } else {
+            document.body.textContent = `No results found for query: ${query}`;
+        }
+    } catch (error) {
+        console.error('Error loading data:', error);
+    }
+}
+
+function displayAPIResult(result) {
+    const resultContainer = document.createElement('div');
+
+    const subcategoryElement = document.createElement('h2');
+    subcategoryElement.textContent = result.subcategory;
+    resultContainer.appendChild(subcategoryElement);
+
+    const metaphorElement = document.createElement('p');
+    metaphorElement.textContent = `Metaphor: ${result.metaphor}`;
+    resultContainer.appendChild(metaphorElement);
+
+    const translationElement = document.createElement('p');
+    translationElement.textContent = `Translation: ${result.translation}`;
+    resultContainer.appendChild(translationElement);
+
+    document.body.appendChild(resultContainer);
+}
+
 // Sanitize user input to prevent XSS
 function sanitizeHTML(str) {
     var temp = document.createElement('div');
