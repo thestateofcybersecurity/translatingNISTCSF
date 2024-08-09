@@ -381,6 +381,7 @@ function getMetaphorTranslation() {
         return;
     }
     const results = findMatchingControls(control);
+    console.log("Search results:", results);  // Debugging line
     displayResults(control, results);
 }
 
@@ -396,6 +397,7 @@ function findMatchingControls(query) {
     const lowerCaseQuery = query.toLowerCase();
     
     for (const control of controlsData) {
+        console.log("Checking control:", control);  // Debugging line
         const subcategoryLower = control.subcategory.toLowerCase();
         const metaphorLower = control.metaphor.toLowerCase();
         const translationLower = control.translation.toLowerCase();
