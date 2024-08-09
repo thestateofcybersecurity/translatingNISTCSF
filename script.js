@@ -594,11 +594,11 @@ function displayResults(query, results) {
         resultContainer.appendChild(controlElement);
 
         const metaphorElement = document.createElement('p');
-        metaphorElement.innerHTML = `<strong>Metaphor:</strong> ${result.metaphor}`;
+        metaphorElement.textContent = `Metaphor: ${result.metaphor}`;
         resultContainer.appendChild(metaphorElement);
-
+        
         const translationElement = document.createElement('p');
-        translationElement.innerHTML = `<strong>Translation:</strong> ${result.translation}`;
+        translationElement.textContent = `Translation: ${result.translation}`;
         resultContainer.appendChild(translationElement);
 
         resultDiv.appendChild(resultContainer);
@@ -618,11 +618,11 @@ function displayAllControls() {
         resultContainer.appendChild(controlElement);
 
         const metaphorElement = document.createElement('p');
-        metaphorElement.innerHTML = `<strong>Metaphor:</strong> ${result.metaphor}`;
+        metaphorElement.textContent = `Metaphor: ${result.metaphor}`;
         resultContainer.appendChild(metaphorElement);
 
         const translationElement = document.createElement('p');
-        translationElement.innerHTML = `<strong>Translation:</strong> ${result.translation}`;
+        translationElement.textContent = `Translation: ${result.translation}`;
         resultContainer.appendChild(translationElement);
 
         resultDiv.appendChild(resultContainer);
