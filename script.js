@@ -1,32 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('searchInput');
-    const resultsContainer = document.getElementById('results');
+const controlsDataUrl = 'script.json';
 
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            searchInput.addEventListener('input', () => {
-                const query = searchInput.value.toLowerCase();
-                const filteredResults = data.filter(item => 
-                    item.subcategory.toLowerCase().includes(query)
-                );
+let controlsData = [];
 
-                displayResults(filteredResults);
-            });
+fetch(controlsDataUrl)
+    .then(response => response.json())
+    .then(data => {
+        controlsData = data;
+    })
+    .catch(error => console.error('Error loading data:', error));
 
-            const displayResults = (results) => {
-                resultsContainer.innerHTML = '';
-                results.forEach(item => {
-                    const resultDiv = document.createElement('div');
-                    resultDiv.classList.add('result-item');
-                    resultDiv.innerHTML = `
-                        <h2>${item.subcategory}</h2>
-                        <p><strong>Metaphor:</strong> ${item.metaphor}</p>
-                        <p><strong>Translation:</strong> ${item.translation}</p>
-                    `;
-                    resultsContainer.appendChild(resultDiv);
-                });
-            };
-        })
-        .catch(error => console.error('Error loading data:', error));
+document.getElementById('searchButton').addEventListener('click', () => {
+    const query = document.getElementById('searchInput').value.trim().toUpperCase();
+    const resultDiv = document.getElementById('result');
+    const results = controlsData.filter(control => control.subcategory.includes(query));
+
+    if (results.length === 0) {
+        resultDiv.textContent = `No matches found for ${query}.`;
+    } else {
+        resultDiv.innerHTML = results.map(result => `
+            <div>
+                <h2>${result.subcategory}</h2>
+                <p><strong>Metaphor:</strong> ${result.metaphor}</p>
+                <p><strong>Translation:</strong> ${result.translation}</p>
+            </div>
+        `).join('');
+    }
 });
