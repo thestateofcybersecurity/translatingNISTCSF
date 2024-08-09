@@ -1,19 +1,35 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    background-color: #f4f4f4;
 }
 
-.control {
-    margin-bottom: 20px;
+h1 {
+    color: #333;
 }
 
-.control-title {
-    font-weight: bold;
-}
-
-.search-bar {
-    margin-bottom: 20px;
-    padding: 10px;
+#searchInput {
     width: 100%;
-    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.result-item {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.result-item h2 {
+    margin: 0 0 10px 0;
+}
+
+.result-item p {
+    margin: 0;
 }
