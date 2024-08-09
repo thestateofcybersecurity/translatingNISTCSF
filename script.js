@@ -39,14 +39,25 @@ function isValidInput(input) {
     return regex.test(input);
 }
 
-// Find matching controls
+// Find matching controls with relaxed criteria for non-exact matches
 function findMatchingControls(query) {
     const results = [];
+    const lowerCaseQuery = query.toLowerCase();
+    
     for (const control of controlsData) {
-        if (control.subcategory.includes(query)) {
+        const subcategoryLower = control.subcategory.toLowerCase();
+        const metaphorLower = control.metaphor.toLowerCase();
+        const translationLower = control.translation.toLowerCase();
+        
+        if (
+            subcategoryLower.includes(lowerCaseQuery) ||
+            metaphorLower.includes(lowerCaseQuery) ||
+            translationLower.includes(lowerCaseQuery)
+        ) {
             results.push(control);
         }
     }
+    
     return results;
 }
 
@@ -88,7 +99,10 @@ function checkEnter(event) {
     }
 }
 
+// Event listeners for search and displaying all controls
+document.getElementById('searchInput').addEventListener('keypress', checkEnter);
 document.getElementById('searchButton').addEventListener('click', getMetaphorTranslation);
+document.getElementById('allControlsButton').addEventListener('click', displayAllControls);
 
 // Display Soup of the Day
 function displaySoupOfTheDay() {
