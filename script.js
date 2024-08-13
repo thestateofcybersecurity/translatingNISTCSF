@@ -679,44 +679,38 @@ document.getElementById('searchInput').addEventListener('keypress', checkEnter);
 document.getElementById('searchButton').addEventListener('click', getMetaphorTranslation);
 document.getElementById('allControlsButton').addEventListener('click', displayAllControls);
 
-// Display Soup of the Day
-function displaySoupOfTheDay() {
+// Display NIST Soup of the Day
+function displayNISTSoupOfTheDay() {
     const today = new Date().toISOString().slice(0, 10);
-    let soupOfTheDay = JSON.parse(localStorage.getItem('soupOfTheDay'));
+    let soupOfTheDayNIST = JSON.parse(localStorage.getItem('soupOfTheDayNIST'));
 
-    // Check if there's no Soup of the Day or if the stored date isn't today
-    if (!soupOfTheDay || soupOfTheDay.date !== today) {
+    if (!soupOfTheDayNIST || soupOfTheDayNIST.date !== today) {
         const controls = Object.keys(NISTcontrolsData);
         const randomControl = controls[Math.floor(Math.random() * controls.length)];
-        soupOfTheDay = {
+        soupOfTheDayNIST = {
             date: today,
             subcategory: NISTcontrolsData[randomControl].subcategory,
             metaphor: NISTcontrolsData[randomControl].metaphor,
             translation: NISTcontrolsData[randomControl].translation
         };
-        localStorage.setItem('soupOfTheDay', JSON.stringify(soupOfTheDay));
+        localStorage.setItem('soupOfTheDayNIST', JSON.stringify(soupOfTheDayNIST));
     }
 
-    const soupControl = document.getElementById('soupControl');
-
-    // Clear any previous content
+    const soupControl = document.getElementById('soupControlNIST');
+    
     soupControl.textContent = '';
 
-    // Create the elements safely
     const strongElement = document.createElement('strong');
-    strongElement.textContent = soupOfTheDay.subcategory;
+    strongElement.textContent = soupOfTheDayNIST.subcategory;
     soupControl.appendChild(strongElement);
 
-    // Display the metaphor
     const metaphorElement = document.createElement('p');
-    metaphorElement.textContent = `Metaphor: ${soupOfTheDay.metaphor}`;
+    metaphorElement.textContent = `Metaphor: ${soupOfTheDayNIST.metaphor}`;
     soupControl.appendChild(metaphorElement);
 
-    // Display the translation
     const translationElement = document.createElement('p');
-    translationElement.textContent = `Translation: ${soupOfTheDay.translation}`;
+    translationElement.textContent = `Translation: ${soupOfTheDayNIST.translation}`;
     soupControl.appendChild(translationElement);
-}
 
 // Load the controls data when the page loads
 window.onload = displaySoupOfTheDay;
