@@ -696,21 +696,21 @@ function displayNISTSoupOfTheDay() {
         localStorage.setItem('soupOfTheDayNIST', JSON.stringify(soupOfTheDayNIST));
     }
 
-    const soupControl = document.getElementById('soupControlNIST');
+    const soupControlNIST = document.getElementById('soupControlNIST');
     
     soupControl.textContent = '';
 
     const strongElement = document.createElement('strong');
     strongElement.textContent = soupOfTheDayNIST.subcategory;
-    soupControl.appendChild(strongElement);
+    soupControlNIST.appendChild(strongElement);
 
     const metaphorElement = document.createElement('p');
     metaphorElement.textContent = `Metaphor: ${soupOfTheDayNIST.metaphor}`;
-    soupControl.appendChild(metaphorElement);
+    soupControlNIST.appendChild(metaphorElement);
 
     const translationElement = document.createElement('p');
     translationElement.textContent = `Translation: ${soupOfTheDayNIST.translation}`;
-    soupControl.appendChild(translationElement);
+    soupControlNIST.appendChild(translationElement);
 }
 
 // Load the controls data when the page loads
