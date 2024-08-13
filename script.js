@@ -698,7 +698,7 @@ function displayNISTSoupOfTheDay() {
 
     const soupControlNIST = document.getElementById('soupControlNIST');
     
-    soupControl.textContent = '';
+    soupControlNIST.textContent = '';
 
     const strongElement = document.createElement('strong');
     strongElement.textContent = soupOfTheDayNIST.subcategory;
