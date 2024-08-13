@@ -1,5 +1,5 @@
 // Embed the JSON data directly into the script
-const controlsData = [
+const NISTNISTcontrolsData = [
     {
         "subcategory": "GV.OC-01: The organizational mission is understood and informs cybersecurity risk management.",
         "metaphor": "Understanding the purpose of your family and using it to guide decisions.",
@@ -594,7 +594,7 @@ function findMatchingControls(query) {
     const results = [];
     const lowerCaseQuery = query.toLowerCase();
     
-    for (const control of controlsData) {
+    for (const control of NISTcontrolsData) {
         console.log("Checking control:", control);  // Debugging line
         const subcategoryLower = control.subcategory.toLowerCase();
         const metaphorLower = control.metaphor.toLowerCase();
@@ -648,7 +648,7 @@ function displayAllControls() {
     const resultDiv = document.getElementById('result');
     resultDiv.textContent = ''; // Clear any previous results
 
-    controlsData.forEach(result => {
+    NISTcontrolsData.forEach(result => {
         const resultContainer = document.createElement('div');
 
         const controlElement = document.createElement('h2');
@@ -684,20 +684,21 @@ function displaySoupOfTheDay() {
     const today = new Date().toISOString().slice(0, 10);
     let soupOfTheDay = JSON.parse(localStorage.getItem('soupOfTheDay'));
 
+    // Check if there's no Soup of the Day or if the stored date isn't today
     if (!soupOfTheDay || soupOfTheDay.date !== today) {
-        const controls = controlsData;
+        const controls = Object.keys(NISTcontrolsData);
         const randomControl = controls[Math.floor(Math.random() * controls.length)];
         soupOfTheDay = {
             date: today,
-            subcategory: randomControl.subcategory,
-            metaphor: randomControl.metaphor,
-            translation: randomControl.translation
+            subcategory: NISTcontrolsData[randomControl].subcategory,
+            metaphor: NISTcontrolsData[randomControl].metaphor,
+            translation: NISTcontrolsData[randomControl].translation
         };
         localStorage.setItem('soupOfTheDay', JSON.stringify(soupOfTheDay));
     }
 
-    const soupAcronym = document.getElementById('soupControl');
-    
+    const soupControl = document.getElementById('soupControl');
+
     // Clear any previous content
     soupControl.textContent = '';
 
@@ -706,8 +707,15 @@ function displaySoupOfTheDay() {
     strongElement.textContent = soupOfTheDay.subcategory;
     soupControl.appendChild(strongElement);
 
-    const textNode = document.createTextNode(`: ${soupOfTheDay.metaphor}`);
-    soupControl.appendChild(textNode);
+    // Display the metaphor
+    const metaphorElement = document.createElement('p');
+    metaphorElement.textContent = `Metaphor: ${soupOfTheDay.metaphor}`;
+    soupControl.appendChild(metaphorElement);
+
+    // Display the translation
+    const translationElement = document.createElement('p');
+    translationElement.textContent = `Translation: ${soupOfTheDay.translation}`;
+    soupControl.appendChild(translationElement);
 }
 
 // Load the controls data when the page loads
