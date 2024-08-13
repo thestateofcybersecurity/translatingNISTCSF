@@ -1,5 +1,5 @@
 // Embed the JSON data directly into the script
-const NISTNISTcontrolsData = [
+const NISTcontrolsData = [
     {
         "subcategory": "GV.OC-01: The organizational mission is understood and informs cybersecurity risk management.",
         "metaphor": "Understanding the purpose of your family and using it to guide decisions.",
