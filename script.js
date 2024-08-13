@@ -714,4 +714,4 @@ function displayNISTSoupOfTheDay() {
 }
 
 // Load the controls data when the page loads
-window.onload = displaySoupOfTheDayNIST;
+window.onload = displayNISTSoupOfTheDay;
