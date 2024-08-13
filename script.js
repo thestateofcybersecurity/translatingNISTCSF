@@ -711,6 +711,7 @@ function displayNISTSoupOfTheDay() {
     const translationElement = document.createElement('p');
     translationElement.textContent = `Translation: ${soupOfTheDayNIST.translation}`;
     soupControl.appendChild(translationElement);
+}
 
 // Load the controls data when the page loads
 window.onload = displaySoupOfTheDay;
